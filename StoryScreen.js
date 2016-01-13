@@ -15,8 +15,8 @@ var {
   WebView,
 } = React;
 
-var MyWebView = (Platform.OS === 'ios') ? WebView : require('./WebView');
 var DetailToolbar = require('./DetailToolbar');
+var MyWebView = (Platform.OS === 'ios') ? WebView : require('./WebView');
 
 var BASE_URL = 'http://news.at.zhihu.com/api/4/news/';
 var REF_HEADER = 'header';

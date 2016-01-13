@@ -1,4 +1,4 @@
-package com.race604.zhihu.daily;
+package com.rctzhihudaily;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -75,7 +75,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
         super.onResume();
 
         if (mReactInstanceManager != null) {
-            mReactInstanceManager.onResume(this);
+            mReactInstanceManager.onResume(this, this);
         }
     }
 
